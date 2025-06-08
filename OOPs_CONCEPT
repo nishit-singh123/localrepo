@@ -1,0 +1,47 @@
+a=1
+print(type(a)) # built-in class
+def display():
+    pass
+print ("HELLO".lower())
+
+# CLASS
+
+class Instructor:
+    followers=0
+    def __init__(self,instructor_name,address):
+       self.name=instructor_name
+       self.address=address
+       #self.followers=0 # default value for any attribute
+    # it will accept formal parameter as string     
+    def display(self,subject_name):
+        print(f"hi i am {self.name} and i teach {subject_name}")
+    
+    def update_followers(self,follower_name):
+        self.followers+=1    
+
+instructor_1=Instructor('jenny','gurgaon')
+print(type(instructor_1))
+
+print(instructor_1.name)   
+instructor_2=Instructor("payal","delhi")
+instructor_1.display('python')
+instructor_1.update_followers("payal")
+print(instructor_1.followers)
+
+# CODING EXERCISE
+
+class Circle:
+    pi=3.14 # class object attribute
+    def __init__(self,radius=6):
+        self.radius=radius
+        self.area=Circle.pi*radius*radius
+    def get_circumference(self):
+        return 2 *self.pi*self.radius    
+circle_1=Circle(8)
+print(circle_1.get_circumference())
+circle_2=Circle(21)
+print(circle_2.get_circumference())
+print(circle_1.area)
+
+
+

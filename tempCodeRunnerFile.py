@@ -1,4 +1,2 @@
-n=int(input("enter the number:"))
-# for i in range(1,n+1):
-#     print("*"*i,end=" ")
-#     print ("")
+doctor_2=homeopathy('heart','good','better')
+# doctor_2=homeopathy('asthma','better','best')
